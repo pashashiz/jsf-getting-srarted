@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>JSF Tutorial!</title>
+</head>
+<body>
+    <f:metadata>
+        <f:viewParam name="name" value="#{car.name}" />
+        <f:viewParam name="brand" value="#{car.brand}" />
+    </f:metadata>
+    <div>Car name: #{car.name}</div>
+    <div>Car brand: #{car.brand}</div>
+    <h:form>
+        <h:commandButton action="hello" value="Home" />
+    </h:form>
+</body>
+</html>
